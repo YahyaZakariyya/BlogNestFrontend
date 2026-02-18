@@ -101,12 +101,13 @@ export function PostDetailPage() {
 
                     {isOwner && (
                         <div className="flex items-center gap-2">
-                            <Button variant="ghost" size="sm" asChild>
-                                <Link to={`#`}>
-                                    <Edit className="h-4 w-4" />
-                                    Edit
-                                </Link>
-                            </Button>
+                            <Link
+                                to="#"
+                                className="inline-flex items-center justify-center gap-2 rounded-lg font-medium transition-all duration-200 text-surface-600 hover:text-surface-900 hover:bg-surface-100 px-3 py-1.5 text-sm"
+                            >
+                                <Edit className="h-4 w-4" />
+                                Edit
+                            </Link>
                             <Button
                                 variant="ghost"
                                 size="sm"
